@@ -1,19 +1,20 @@
 package apputils.zhangxu.zhangxuutils;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import apputils.zhangxu.zhangxuutils.materialdesign.DesignActivity;
 import apputils.zhangxu.zhangxuutils.toolbar.ToolbarActivity;
 import apputils.zhangxu.zhangxuutils.widgets.WidgetsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String [] title = {"控件","第三方控件","toolbar","交互式通信","多媒体","第三方控件"};
+    private String [] title = {"控件","第三方控件","toolbar","交互式通信","多媒体","第三方控件","material design"};
     private ListView lv_main_list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 3:
 
+                        break;
+                    case 4:
+
+                        break;
+                    case 5:
+
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(MainActivity.this, DesignActivity.class);
+                        startActivity(intent6);
                         break;
                 }
             }

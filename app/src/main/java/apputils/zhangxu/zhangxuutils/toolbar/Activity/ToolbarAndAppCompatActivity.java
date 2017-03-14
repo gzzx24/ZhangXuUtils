@@ -11,5 +11,7 @@ public class ToolbarAndAppCompatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toolbar_and_app_compat);
+
+
     }
 }

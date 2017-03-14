@@ -17,8 +17,15 @@
         </activity>
         <activity android:name=".widgets.WidgetsActivity" />
         <activity android:name=".toolbar.ToolbarActivity" />
-        <activity android:name=".toolbar.Activity.ToolbarAndAppCompatActivity"
-            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".toolbar.Activity.ToolbarAndAppCompatActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".materialdesign.DesignActivity"
+            android:label="@string/title_activity_design"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".materialdesign.activity.DesignWidgetActivity" />
+        <activity android:name=".materialdesign.activity.DesignTabActivity"></activity>
     </application>
 
 </manifest>
