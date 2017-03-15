@@ -1,8 +1,8 @@
 package apputils.zhangxu.zhangxuutils.materialdesign.activity;
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
@@ -25,7 +25,7 @@ public class DesignTabActivity extends AppCompatActivity {
             String title = "tab" + i;
             tabs.addTab(tabs.newTab().setText(title));
             titles.add(title);
-            Fragment fragment = new TabFragment();
+            Fragment fragment = TabFragment.newInstance(title,"");
             fragments.add(fragment);
         }
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -33,6 +33,5 @@ public class DesignTabActivity extends AppCompatActivity {
         viewPager.setAdapter(mAdapter);
         tabs.setupWithViewPager(viewPager);
         tabs.setTabsFromPagerAdapter(mAdapter);
-
     }
 }

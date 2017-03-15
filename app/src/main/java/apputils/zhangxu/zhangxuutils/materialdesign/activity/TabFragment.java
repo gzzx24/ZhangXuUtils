@@ -70,7 +70,7 @@ public class TabFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_tab, container, false);
         tv_title = (TextView) view.findViewById(R.id.tv_title);
-        tv_title.setText(mTitle);
+        tv_title.setText(mParam1);
         return view;
     }
 
