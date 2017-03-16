@@ -26,7 +26,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".materialdesign.activity.DesignWidgetActivity" />
         <activity android:name=".materialdesign.activity.DesignTabActivity" />
-        <activity android:name=".materialdesign.activity.NavigationActivity"></activity>
+        <activity android:name=".materialdesign.activity.NavigationActivity" />
+        <activity android:name=".materialdesign.activity.CoordinatorLayoutActivity"></activity>
     </application>
 
 </manifest>
