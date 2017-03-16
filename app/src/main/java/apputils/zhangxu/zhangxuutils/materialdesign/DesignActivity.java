@@ -14,10 +14,14 @@ import android.widget.ListView;
 import apputils.zhangxu.zhangxuutils.R;
 import apputils.zhangxu.zhangxuutils.materialdesign.activity.DesignTabActivity;
 import apputils.zhangxu.zhangxuutils.materialdesign.activity.DesignWidgetActivity;
+import apputils.zhangxu.zhangxuutils.materialdesign.activity.NavigationActivity;
 
 public class DesignActivity extends AppCompatActivity {
 
-    private String [] title = {"常规控件的使用介绍","符合 MD 设计的菜单控件","具有过渡动画效果的布局 layout","toolbar"};
+    private String [] title = {"常规控件的使用介绍\nFloatingActionButton、Snackbar"
+            ,"符合 MD 设计的菜单控件\nTabLayout、ViewPager"
+            ,"具有过渡动画效果的布局 layout"
+            ,"滑动菜单\nDrawerLayout、navigateion"};
     private ListView lv_design_list;
 
     @Override
@@ -49,15 +53,16 @@ public class DesignActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent2 = new Intent(DesignActivity.this, DesignTabActivity.class);
-                        startActivity(intent2);
+                        Intent intent1 = new Intent(DesignActivity.this, DesignTabActivity.class);
+                        startActivity(intent1);
 
                         break;
                     case 2:
 
                         break;
                     case 3:
-
+                        Intent intent3 = new Intent(DesignActivity.this, NavigationActivity.class);
+                        startActivity(intent3);
                         break;
                 }
             }
