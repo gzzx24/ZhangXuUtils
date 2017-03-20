@@ -56,7 +56,7 @@ public class NavigationActivity extends AppCompatActivity {
         btn_close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mDrawer.closeDrawer(Gravity.LEFT);
+                mDrawer.openDrawer(Gravity.RIGHT);
             }
         });
     }

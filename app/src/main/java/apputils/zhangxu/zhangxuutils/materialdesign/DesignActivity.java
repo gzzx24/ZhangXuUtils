@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import apputils.zhangxu.zhangxuutils.R;
+import apputils.zhangxu.zhangxuutils.materialdesign.activity.CoordinatorLayoutActivity;
 import apputils.zhangxu.zhangxuutils.materialdesign.activity.DesignTabActivity;
 import apputils.zhangxu.zhangxuutils.materialdesign.activity.DesignWidgetActivity;
 import apputils.zhangxu.zhangxuutils.materialdesign.activity.NavigationActivity;
@@ -55,10 +56,10 @@ public class DesignActivity extends AppCompatActivity {
                     case 1:
                         Intent intent1 = new Intent(DesignActivity.this, DesignTabActivity.class);
                         startActivity(intent1);
-
                         break;
                     case 2:
-
+                        Intent intent2 = new Intent(DesignActivity.this, CoordinatorLayoutActivity.class);
+                        startActivity(intent2);
                         break;
                     case 3:
                         Intent intent3 = new Intent(DesignActivity.this, NavigationActivity.class);

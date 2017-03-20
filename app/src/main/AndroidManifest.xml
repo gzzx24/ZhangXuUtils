@@ -27,7 +27,8 @@
         <activity android:name=".materialdesign.activity.DesignWidgetActivity" />
         <activity android:name=".materialdesign.activity.DesignTabActivity" />
         <activity android:name=".materialdesign.activity.NavigationActivity" />
-        <activity android:name=".materialdesign.activity.CoordinatorLayoutActivity"></activity>
+        <activity android:name=".materialdesign.activity.CoordinatorLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
